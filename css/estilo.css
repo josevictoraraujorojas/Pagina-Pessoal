@@ -1,0 +1,367 @@
+* {
+  margin: 0; /* Remove margens de todos os elementos */
+  padding: 0; /* Remove preenchimento de todos os elementos */
+}
+
+header {
+  width: 100%; /* Define a largura do cabeçalho para 100% */
+  font-size: 1.3rem; /* Define o tamanho da fonte no cabeçalho */
+}
+
+#navegacao {
+  position: fixed; /* Torna o cabeçalho fixo no topo da página */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que o cabeçalho sobreponha outros elementos */
+  background-color: white; /* Fundo branco para o cabeçalho */
+}
+
+p {
+  color: rgb(119, 115, 115); /* Cor do texto dos parágrafos */
+  font-size: 1.4rem; /* Define o tamanho da fonte nos parágrafos */
+}
+
+.container {
+  margin-left: auto; /* Centraliza o conteúdo da página */
+  margin-right: auto;
+  width: 85%; /* Define a largura do container */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: space-around; /* Distribui os itens de forma equidistante */
+}
+
+#hamburguer {
+  display: none; /* Oculta o ícone do menu hamburguer por padrão */
+  background-color: white; /* Cor de fundo do botão */
+  border: 0; /* Remove a borda */
+}
+
+header div nav ul {
+  display: flex; /* Utiliza flexbox para o menu de navegação */
+  gap: 1.8rem; /* Espaçamento entre os itens do menu */
+  list-style-type: none; /* Remove os marcadores da lista */
+}
+
+header div nav a {
+  color: rgb(119, 115, 115); /* Cor dos links do menu */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+#menu-hamburguer {
+  width: 100%; /* Define a largura do menu hamburguer */
+  display: none; /* Oculta o menu hamburguer por padrão */
+  position: fixed; /* Fixa o menu na tela */
+  justify-content: center; /* Alinha o conteúdo do menu ao centro */
+  top: 0;
+  left: 0;
+  z-index: 999; /* Garante que o menu hamburguer apareça acima de outros elementos */
+  background-color: white; /* Fundo branco para o menu hamburguer */
+  padding-bottom: 1rem; /* Espaçamento inferior */
+}
+
+#menu-hamburguer ul {
+  margin: 0 auto; /* Centraliza os itens do menu */
+}
+
+#menu-hamburguer nav ul {
+  display: flex;
+  justify-content: center; /* Alinha os itens ao centro */
+  margin: 0 auto;
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  gap: 1.8rem; /* Espaçamento entre os itens */
+  list-style-type: none; /* Remove os marcadores da lista */
+}
+
+#menu-hamburguer nav a {
+  color: rgb(119, 115, 115); /* Cor dos links do menu hamburguer */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin: 0 auto; /* Centraliza os links */
+}
+
+section {
+  width: 100%; /* Define a largura das seções para 100% */
+  margin-bottom: 1rem; /* Espaçamento inferior entre as seções */
+  padding-bottom: 1rem; /* Espaçamento inferior da seção */
+  padding-top: 6rem; /* Espaçamento superior para as seções */
+}
+
+#introducao {
+  padding-top: 10rem; /* Aumenta o espaçamento superior do bloco de introdução */
+}
+
+#introducao div {
+  width: 60%; /* Define a largura do conteúdo dentro de #introducao */
+  display: grid; /* Utiliza grid para o layout */
+  grid-template-columns: 1fr 1fr; /* Divide o conteúdo em duas colunas */
+  grid-template-rows: 1fr 1fr 12%; /* Define as linhas do grid */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#introducao div p {
+  grid-column-start: 1; /* Coloca o parágrafo na primeira coluna */
+  text-align: start; /* Alinha o texto à esquerda */
+}
+
+#introducao div header h1 {
+  font-size: 5rem; /* Tamanho grande para o título principal */
+  line-height: 0.7; /* Define o espaçamento entre as linhas */
+  margin-top: 1rem;
+  margin-bottom: -0.2rem;
+}
+
+#introducao div header h6 {
+  font-size: 1.5rem; /* Tamanho de fonte menor para o subtítulo */
+  line-height: 0.7;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+#introducao div header h6 strong {
+  color: rgb(0, 0, 0); /* Define a cor preta para o texto em negrito */
+}
+
+#introducao div a {
+  grid-column-start: 1; /* Coloca o botão na primeira coluna */
+  width: 30%;
+  border-radius: 25px; /* Borda arredondada para o botão */
+}
+
+#introducao div a button {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px; /* Borda arredondada para o botão */
+  background-color: rgb(0, 0, 0); /* Cor de fundo preta para o botão */
+  color: white; /* Cor do texto do botão */
+}
+
+#sobre {
+  background-color: rgb(246, 246, 246); /* Cor de fundo para o sobre */
+}
+
+#sobre div {
+  width: 60%; /* Define a largura para o conteúdo dentro de #sobre */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sobre div nav {
+  grid-column-start: 1; /* Coloca o menu na primeira coluna */
+}
+
+#sobre div nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+}
+
+.icone-social {
+  width: 30px;
+  height: 30px; /* Define o tamanho dos ícones sociais */
+}
+
+#sobre div div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sobre div div h2 {
+  font-size: 2rem; /* Define o tamanho do subtítulo */
+}
+
+#sobre-mim {
+  padding-bottom: 1rem;
+  border-bottom: 1.2px solid rgb(222, 221, 221); /* Linha inferior separando os itens */
+}
+
+#sobre div div div {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Define as linhas do grid */
+  grid-template-columns: 1fr 1fr 1fr; /* Define as colunas do grid */
+}
+
+#cont {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conteinerCurso {
+  width: 100%;
+  display: flex;
+  padding-right: 2rem;
+  flex-direction: column;
+}
+
+.conteinerDisciplinas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse; /* Faz a tabela ocupar toda a largura sem espaçamento */
+  color: rgb(119, 115, 115); /* Cor do texto da tabela */
+  font-size: 1.4rem; /* Define o tamanho da fonte na tabela */
+}
+
+th {
+}
+
+tr {
+  border-left: 2px solid black; /* Linha esquerda para cada linha da tabela */
+  border-bottom: 1rem solid white; /* Linha inferior para as linhas da tabela */
+  background-color: rgb(246, 246, 246); /* Cor de fundo das linhas da tabela */
+  height: 6.8em; /* Altura das linhas da tabela */
+}
+
+td {
+}
+
+#educacao div section {
+  text-align: center; /* Alinha o texto dentro da seção de educação ao centro */
+}
+
+#titulo1,
+#titulo2 {
+  grid-row-start: 1; /* Define onde o título começará no grid */
+  grid-column-start: 1;
+}
+
+.cursos {
+  height: 9em; /* Define a altura para o bloco de cursos */
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-left: 2px solid black;
+}
+
+#habilidades {
+  background-color: rgb(
+    246,
+    246,
+    246
+  ); /* Cor de fundo para a seção de habilidades */
+  text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+#conteinerHabilidades {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#habilidades h1 {
+  font-size: 3rem; /* Tamanho grande para o título de habilidades */
+  padding-bottom: 2rem; /* Espaçamento inferior */
+}
+
+.listaHabilidades {
+  width: 100%;
+  list-style-type: none;
+  grid-row-start: 2;
+}
+
+.descricao {
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+.barra {
+  width: 100%;
+  height: 0.4rem;
+  background-color: rgb(179, 178, 178); /* Cor de fundo da barra */
+  border-radius: 12px; /* Arredonda as bordas da barra */
+}
+
+#html,
+#java,
+#angular,
+#javascript,
+#ed,
+#sql {
+  height: 0.4rem; /* Altura uniforme para todas as barras de progresso */
+  background-color: black; /* Cor preta para as barras de progresso */
+  border-radius: 12px; /* Bordas arredondadas */
+}
+
+#contato {
+  width: 100%; /* Define a largura da seção de contato */
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Alinha os itens ao centro */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contato div {
+  width: 60%; /* Define a largura dos formulários de contato */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#contato h1 {
+  font-size: 3rem; /* Tamanho grande para o título de contato */
+  padding-bottom: 2rem; /* Espaçamento inferior */
+}
+
+#contato div form {
+  font-size: 1.4rem; /* Define o tamanho da fonte nos formulários */
+  width: 50%; /* Define a largura do formulário */
+}
+
+.text,
+textarea {
+  width: 97%; /* Define a largura dos campos de entrada de texto */
+  background-color: rgb(246, 246, 246); /* Cor de fundo */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+input {
+  width: 15%; /* Largura dos campos de entrada */
+  height: 3rem; /* Altura dos campos */
+  border-radius: 25px; /* Bordas arredondadas */
+  background-color: black; /* Cor de fundo preta */
+  color: white; /* Cor do texto branca */
+}
+
+#contato div div {
+  display: flex;
+  flex-direction: column; /* Organiza os campos do formulário em coluna */
+  font-size: 1.4rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 450px) {
+  #hamburguer {
+    display: block; /* Exibe o menu hamburguer em telas pequenas */
+  }
+
+  #menu {
+    display: none; /* Oculta o menu normal em telas pequenas */
+  }
+
+  p {
+    font-size: 0.8rem; /* Diminui o tamanho da fonte dos parágrafos em telas pequenas */
+  }
+
+  #sobre div {
+    width: 60%; /* Ajusta o tamanho do conteúdo */
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 90% 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input {
+    width: 50%; /* Ajusta a largura dos campos de entrada em telas pequenas */
+  }
+}
